@@ -16,7 +16,7 @@ public class Donation {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     
-    private String donorName;
+    private String name;
     private String email;        
     private String mobileNo;      
     private String address;       

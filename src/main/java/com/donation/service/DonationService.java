@@ -33,7 +33,7 @@ public class DonationService {
     public Donation update(int id, Donation donation) {
         Donation existing = repo.findById(id).orElse(null);
         if (existing != null) {
-            existing.setDonorName(donation.getDonorName());
+            existing.setName(donation.getName());
             existing.setEmail(donation.getEmail());         
             existing.setMobileNo(donation.getMobileNo());    
             existing.setAddress(donation.getAddress());      
